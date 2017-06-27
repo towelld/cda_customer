@@ -9,6 +9,18 @@ view: data_elements {
   dimension: feature_description {
     type: string
     sql: ${TABLE}.feature_description ;;
+    link: {
+      label: "Tolerances"
+      url: "http://localhost:9999/embed/dashboards/cda_customer::cda_customer_tolerances?feature_description={{ value }}"
+    }
+    link: {
+      label: "Business Rules"
+      url: "http://localhost:9999/embed/dashboards/cda_customer::cda_customer_business_rules?rule_type=&feature_description={{ value }}"
+    }
+    link: {
+      label: "Data Elements"
+      url: "http://localhost:9999/embed/dashboards/cda_customer::cda_customer_data_elements?feature_description={{ value }}"
+    }
   }
 
   dimension: feature_name {
