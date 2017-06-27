@@ -2384,7 +2384,7 @@ view: records {
     view_label: "Reviewed Date"
     label: "Reviewed Date"
     type: string
-    sql: case when ${TABLE}.kyb_last_update_dt_str_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    sql: case when ${TABLE}.kyb_last_update_dt_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
     html: <img src={{rendered_value}}/> {{records.kyb_last_update_dt_str._value}};;
   }
   dimension: charity_reg_no_display {
