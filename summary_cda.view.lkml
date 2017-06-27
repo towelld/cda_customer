@@ -125,6 +125,6 @@ view: summary_cda {
     drill_fields: [records*]
   }
   set: records {
-    fields: [records.legal_name,records.reg_add_1,records.reg_add_2,records.reg_add_postcode,records.reg_add_country,records.crn,records.country_of_reg,records.mastership,records.nple_type,records.sic_1992_code,records.sic_1992_name,records.lei_number,records.rm_team,records.ourl_no,records.ourm_no,records.ourc_no,records.kyb_last_update_dt_str,records.charity_reg_no]
+    fields: [records.legal_name_display,records.reg_add_1_display,records.reg_add_2_display,records.reg_add_postcode_display,records.reg_add_country_display,records.crn_display,records.country_of_reg_display,records.mastership_display,records.nple_type_display,records.sic_1992_code_display,records.sic_1992_name_display,records.lei_number_display,records.rm_team_display,records.ourl_no_display,records.ourm_no_display,records.ourc_no_display,records.kyb_last_update_dt_str_display,records.charity_reg_no_display]
   }
 }

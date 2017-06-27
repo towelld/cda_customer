@@ -2195,29 +2195,134 @@ view: records {
     sql: ${TABLE}.WW_ID ;;
   }
 
-  measure: count {
-    type: count
-    drill_fields: [detail*]
+  dimension: legal_name_display {
+    view_label: "Legal Name"
+    label: "Legal Name"
+    type: string
+    sql: case when ${TABLE}.legal_name_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.legal_name._value}};;
+  }
+  dimension: reg_add_1_display {
+    view_label: "Reg Address 1"
+    label: "Reg Address 1"
+    type: string
+    sql: case when ${TABLE}.reg_add_1_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.reg_add_1._value}};;
+  }
+  dimension: reg_add_2_display {
+    view_label: "Reg Address 2"
+    label: "Reg Address 2"
+    type: string
+    sql: case when ${TABLE}.reg_add_2_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.reg_add_2._value}};;
+  }
+  dimension: reg_add_postcode_display {
+    view_label: "Reg Post Code"
+    label: "Reg Post Code"
+    type: string
+    sql: case when ${TABLE}.reg_add_postcode_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.reg_add_postcode._value}};;
+  }
+  dimension: reg_add_country_display {
+    view_label: "Reg Country"
+    label: "Reg Country"
+    type: string
+    sql: case when ${TABLE}.reg_add_country_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.reg_add_country._value}};;
+  }
+  dimension: crn_display {
+    view_label: "Co House Reg No"
+    label: "Co House Reg No"
+    type: string
+    sql: case when ${TABLE}.crn_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.crn._value}};;
+  }
+  dimension: country_of_reg_display {
+    view_label: "Country Reg"
+    label: "Country Reg"
+    type: string
+    sql: case when ${TABLE}.country_of_reg_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.country_of_reg._value}};;
+  }
+  dimension: mastership_display {
+    view_label: "Core System"
+    label: "Core System"
+    type: string
+    sql: case when ${TABLE}.mastership_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.mastership._value}};;
+  }
+  dimension: nple_type_display {
+    view_label: "Non-Profit Type"
+    label: "Non-Profit Type"
+    type: string
+    sql: case when ${TABLE}.nple_type_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.nple_type._value}};;
+  }
+  dimension: sic_1992_code_display {
+    view_label: "SIC1992 Code"
+    label: "SIC1992 Code"
+    type: string
+    sql: case when ${TABLE}.sic_1992_code_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.sic_1992_code._value}};;
+  }
+  dimension: sic_1992_name_display {
+    view_label: "SIC1992 Name"
+    label: "SIC1992 Name"
+    type: string
+    sql: case when ${TABLE}.sic_1992_name_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.sic_1992_name._value}};;
+  }
+  dimension: lei_number_display {
+    view_label: "LEI Number"
+    label: "LEI Number"
+    type: string
+    sql: case when ${TABLE}.lei_number_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.lei_number._value}};;
+  }
+  dimension: rm_team_display {
+    view_label: "Team"
+    label: "Team"
+    type: string
+    sql: case when ${TABLE}.rm_team_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.rm_team._value}};;
+  }
+  dimension: ourl_no_display {
+    view_label: "Status"
+    label: "Status"
+    type: string
+    sql: case when ${TABLE}.ourl_no_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.ourl_no._value}};;
+  }
+  dimension: ourm_no_display {
+    view_label: "Category"
+    label: "Category"
+    type: string
+    sql: case when ${TABLE}.ourm_no_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.ourm_no._value}};;
+  }
+  dimension: ourc_no_display {
+    view_label: "Level"
+    label: "Level"
+    type: string
+    sql: case when ${TABLE}.ourc_no_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.ourc_no._value}};;
+  }
+  dimension: kyb_last_update_dt_str_display {
+    view_label: "Reviewed Date"
+    label: "Reviewed Date"
+    type: string
+    sql: case when ${TABLE}.kyb_last_update_dt_str_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.kyb_last_update_dt_str._value}};;
+  }
+  dimension: charity_reg_no_display {
+    view_label: "Charity Reg No"
+    label: "Charity Reg No"
+    type: string
+    sql: case when ${TABLE}.charity_reg_no_okay = 0 then 'http://localhost:9999/images/clareti/icon_cross.png' else 'http://localhost:9999/images/clareti/icon_tick.png' end ;;
+    html: <img src={{rendered_value}}/> {{records.charity_reg_no._value}};;
   }
 
-  # ----- Sets of fields for drilling ------
-  set: detail {
-    fields: [
-      customer_short_name,
-      legal_name,
-      ourc_name,
-      ourl_name,
-      ourm_name,
-      region_ou_name,
-      rm_name,
-      segment_name,
-      sic_1992_name,
-      sic2_name,
-      sic3_name,
-      sic4_name,
-      sic5_name,
-      trad_record_attention_name,
-      trad_record_name
-    ]
+  measure: count {
+    type: count
   }
 }
