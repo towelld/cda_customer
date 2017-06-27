@@ -38,7 +38,7 @@
       title: Completeness
       left: 3
       top: 0
-      height: 25
+      height: 30
       width: 16
       type: looker_bar
       model: cda_customer
@@ -90,7 +90,7 @@
       title: Timeliness
       left: 19
       top: 0
-      height: 25
+      height: 30
       width: 10
       type: looker_bar
       model: cda_customer
@@ -142,7 +142,7 @@
       title: Accuracy
       left: 29
       top: 0
-      height: 25
+      height: 30
       width: 10
       type: looker_bar
       model: cda_customer
@@ -194,7 +194,7 @@
       title: Conformity
       left: 39
       top: 0
-      height: 25
+      height: 30
       width: 10
       type: looker_bar
       model: cda_customer
@@ -246,7 +246,7 @@
       title: Validity
       left: 49
       top: 0
-      height: 25
+      height: 30
       width: 10
       type: looker_bar
       model: cda_customer
@@ -298,7 +298,7 @@
       title: Consistency
       left: 59
       top: 0
-      height: 25
+      height: 30
       width: 10
       type: looker_bar
       model: cda_customer
@@ -350,7 +350,7 @@
       title: Uniqueness
       left: 69
       top: 0
-      height: 25
+      height: 30
       width: 10
       type: looker_bar
       model: cda_customer
