@@ -5,9 +5,9 @@
     - elements: [cda_customer_records_chart]
       height: 300
     - elements: [cda_customer_records_detail]
-      height: 300
+      height: 150
     - elements: [cda_customer_rule_count]
-      height: 1000
+      height: 500
   embed_style:
     background_color: "#ffffff"
     show_title: true
