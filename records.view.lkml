@@ -2195,6 +2195,79 @@ view: records {
     sql: ${TABLE}.WW_ID ;;
   }
 
+  dimension: legal_name_okay {
+    type: string
+    sql: ${TABLE}.legal_name_okay ;;
+  }
+  dimension: reg_add_1_okay {
+    type: string
+    sql: ${TABLE}.reg_add_1_okay ;;
+  }
+  dimension: reg_add_2_okay {
+    type: string
+    sql: ${TABLE}.reg_add_2_okay ;;
+  }
+  dimension: reg_add_postcode_okay {
+    type: string
+    sql: ${TABLE}.reg_add_postcode_okay ;;
+  }
+  dimension: reg_add_country_okay {
+    type: string
+    sql: ${TABLE}.reg_add_country_okay ;;
+  }
+  dimension: crn_okay {
+    type: string
+    sql: ${TABLE}.crn_okay ;;
+  }
+  dimension: country_of_reg_okay {
+    type: string
+    sql: ${TABLE}.country_of_reg_okay ;;
+  }
+  dimension: mastership_okay {
+    type: string
+    sql: ${TABLE}.mastership_okay ;;
+  }
+  dimension: nple_type_okay {
+    type: string
+    sql: ${TABLE}.nple_type_okay ;;
+  }
+  dimension: sic_1992_code_okay {
+    type: string
+    sql: ${TABLE}.sic_1992_code_okay ;;
+  }
+  dimension: sic_1992_name_okay {
+    type: string
+    sql: ${TABLE}.sic_1992_name_okay ;;
+  }
+  dimension: lei_number_okay {
+    type: string
+    sql: ${TABLE}.lei_number_okay ;;
+  }
+  dimension: rm_team_okay {
+    type: string
+    sql: ${TABLE}.rm_team_okay ;;
+  }
+  dimension: ourl_no_okay {
+    type: string
+    sql: ${TABLE}.ourl_no_okay ;;
+  }
+  dimension: ourm_no_okay {
+    type: string
+    sql: ${TABLE}.ourm_no_okay ;;
+  }
+  dimension: ourc_no_okay {
+    type: string
+    sql: ${TABLE}.ourc_no_okay ;;
+  }
+  dimension: kyb_last_update_dt_okay {
+    type: string
+    sql: ${TABLE}.kyb_last_update_dt_okay ;;
+  }
+  dimension: charity_reg_no_okay {
+    type: string
+    sql: ${TABLE}.charity_reg_no_okay ;;
+  }
+
   dimension: legal_name_display {
     view_label: "Legal Name"
     label: "Legal Name"
