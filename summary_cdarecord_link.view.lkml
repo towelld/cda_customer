@@ -1,4 +1,4 @@
-view: summary_cdarecord_link {
+view: summary_cda_record_link {
   sql_table_name: DemoDataquality.SummaryCDARecordLink ;;
 
   dimension: pk {
