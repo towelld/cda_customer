@@ -53,4 +53,9 @@ view: files {
     type: count
     drill_fields: [id, file_name, file_record_link.count, file_row_errors.count, record_history.count]
   }
+  measure: sum_records{
+    type: sum
+    sql: ${records_loaded};;
+    label: "Records"
+  }
 }
