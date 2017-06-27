@@ -20,11 +20,13 @@ view: files {
   dimension: file_time_stamp {
     type: string
     sql: ${TABLE}.FileTimeStamp ;;
+    label: "Extracted"
   }
 
   dimension: load_time_stamp {
     type: string
     sql: ${TABLE}.LoadTimeStamp ;;
+    label: "Processed"
   }
 
   dimension: match_pk {
