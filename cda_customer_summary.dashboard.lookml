@@ -90,7 +90,7 @@
       title: Timeliness
       left: 19
       top: 0
-      height: 50
+      height: 25
       width: 10
       type: looker_bar
       model: cda_customer
