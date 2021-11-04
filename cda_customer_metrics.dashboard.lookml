@@ -55,7 +55,7 @@
 
   - name: cda_customer_records_detail
     title: Records Loaded Detail
-    type: table
+    type: looker_grid
     model: cda_customer
     explore: files
     dimensions: [files.file_name, files.records_loaded, files.file_time_stamp, files.load_time_stamp]
